@@ -301,13 +301,7 @@ If the templates don't exist, use a regular issue and label it appropriately.
 
 ---
 
-## License
-
-This project is licensed under the MIT License — see the [LICENSE](LICENSE) file.
-
----
-
-Contact:  
+## Contact:  
 - **GitHub:** [https://github.com/Abdelrahmannasser139](https://github.com/Abdelrahmannasser139)  
 - **Email:** [Abdelrahmanasser139@gmail.com](mailto:Abdelrahmanasser139@gmail.com)  
 - **Portfolio:** [https://abdelrahmannasser139.github.io/portfolio/](https://abdelrahmannasser139.github.io/portfolio/)  
