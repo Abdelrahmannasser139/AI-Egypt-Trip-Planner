@@ -54,7 +54,7 @@ A modern web application that helps travelers plan unforgettable trips to Egypt 
 
 ---
 
-## 🖼️ Screenshots
+## Screenshots
 
 ### Home Page
 ![Home Page](client/src/assets/Home.png)
