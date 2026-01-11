@@ -307,18 +307,11 @@ This project is licensed under the MIT License — see the [LICENSE](LICENSE) fi
 
 ---
 
-## Acknowledgments & Contact
-
-- Egyptian Ministry of Tourism for dataset inspiration
-- Google Gemini team for LLM capabilities
-- Pinecone for vector database infrastructure
-- Open-source community for libraries and tools
-
-Contact:
-- Website: https://ray7masr.com
-- Email: support@ray7masr.com
-- Twitter: https://twitter.com/ray7masr
-- Discord: https://discord.gg/ray7masr
+Contact:  
+- **GitHub:** [https://github.com/Abdelrahmannasser139](https://github.com/Abdelrahmannasser139)  
+- **Email:** [Abdelrahmanasser139@gmail.com](mailto:Abdelrahmanasser139@gmail.com)  
+- **Portfolio:** [https://abdelrahmannasser139.github.io/portfolio/](https://abdelrahmannasser139.github.io/portfolio/)  
+- **LinkedIn:** [https://www.linkedin.com/in/abdelrahman-nasser139](https://www.linkedin.com/in/abdelrahman-nasser139)
 
 ---
 
