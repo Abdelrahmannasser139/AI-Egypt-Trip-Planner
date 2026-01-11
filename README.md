@@ -57,7 +57,7 @@ A modern web application that helps travelers plan unforgettable trips to Egypt 
 ## 🖼️ Screenshots
 
 ### Home Page
-![Home Page](assets/home.png)
+![Home Page](assets/Home.png)
 
 ### AI Chatbot
 ![AI Chatbot](assets/chatbot.png)
