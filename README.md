@@ -1,6 +1,5 @@
 # Ray7 Masr — AI-Powered Egypt Trip Planner (رايح مصر)
 
-[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
 [![Repo Size](https://img.shields.io/github/repo-size/Abdelrahmannasser139/AI-Egypt-Trip-Planner)](https://github.com/Abdelrahmannasser139/AI-Egypt-Trip-Planner)
 [![Issues](https://img.shields.io/github/issues/Abdelrahmannasser139/AI-Egypt-Trip-Planner)](https://github.com/Abdelrahmannasser139/AI-Egypt-Trip-Planner/issues)
 [![Stars](https://img.shields.io/github/stars/Abdelrahmannasser139/AI-Egypt-Trip-Planner)](https://github.com/Abdelrahmannasser139/AI-Egypt-Trip-Planner/stargazers)
