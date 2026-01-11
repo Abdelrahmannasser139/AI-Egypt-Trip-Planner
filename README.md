@@ -1,358 +1,325 @@
-🌍 Ray7 Masr – AI-Powered Egypt Trip Planner
-============================================
+# Ray7 Masr — AI-Powered Egypt Trip Planner (رايح مصر)
 
-**Ray7 Masr** (رايح مصر - "Going to Egypt") is a comprehensive web application that helps tourists plan unforgettable trips to Egypt. It combines AI-driven recommendations, cultural insights, and community engagement to provide personalized, memorable travel experiences powered by Google's Gemini API and Retrieval-Augmented Generation (RAG).
+[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
+[![Repo Size](https://img.shields.io/github/repo-size/Abdelrahmannasser139/AI-Egypt-Trip-Planner)](https://github.com/Abdelrahmannasser139/AI-Egypt-Trip-Planner)
+[![Issues](https://img.shields.io/github/issues/Abdelrahmannasser139/AI-Egypt-Trip-Planner)](https://github.com/Abdelrahmannasser139/AI-Egypt-Trip-Planner/issues)
+[![Stars](https://img.shields.io/github/stars/Abdelrahmannasser139/AI-Egypt-Trip-Planner)](https://github.com/Abdelrahmannasser139/AI-Egypt-Trip-Planner/stargazers)
 
-🚀 Features
------------
+A modern web application that helps travelers plan unforgettable trips to Egypt using AI-driven recommendations, cultural insights, interactive maps, and a retrieval-augmented chatbot.
 
-*   **User Authentication & Profiles**Sign up via email/password or social media (Google, Facebook); manage personal travel preferences, save favorite destinations, and track your journey.
-    
-*   **Destination Exploration**Browse and search hundreds of Egyptian destinations with rich descriptions, high-quality photos, interactive maps, and authentic user reviews.
-    
-*   **AI-Powered Itinerary Planner**Generate personalized itineraries based on your preferences, interests, budget, and travel duration using **Gemini API + RAG**. Get intelligent recommendations for routes, timing, and activities.
-    
-*   **Cultural & Historical Insights**Access educational articles, curated videos, interactive timelines, and language tips to learn about Egypt's 5,000-year history, culture, customs, and landmarks.
-    
-*   **Community & Social Features**Post reviews, engage in discussion forums, share your itineraries on social media, and connect with fellow travelers. AI-powered content moderation ensures a safe environment.
-    
-*   **AI Chatbot Assistant**Get instant 24/7 answers to your travel questions with our context-aware, RAG-powered chatbot that provides smart suggestions and recommendations.
-    
-*   **Responsive Design**Fully optimized for desktop, tablet, and mobile devices with a mobile-first approach and progressive web app capabilities.
-    
-*   **Gemini API + RAG Integration**Smart AI recommendations, personalized itinerary generation, and retrieval of contextual travel information from comprehensive Egyptian tourism databases.
-    
+---
 
-🛠 Tech Stack
--------------
+## Table of Contents
 
-### Frontend
+- [About](#about)
+- [Features](#features)
+- [Tech Stack](#tech-stack)
+- [Getting Started](#getting-started)
+  - [Prerequisites](#prerequisites)
+  - [Installation](#installation)
+  - [Environment Configuration](#environment-configuration)
+  - [Database & Vector DB Initialization](#database--vector-db-initialization)
+  - [Run (Development)](#run-development)
+- [Project Structure](#project-structure)
+- [AI & RAG Implementation](#ai--rag-implementation)
+- [Testing](#testing)
+- [Deployment](#deployment)
+- [Contributing](#contributing)
+- [Bug Reports & Feature Requests](#bug-reports--feature-requests)
+- [License](#license)
+- [Acknowledgments & Contact](#acknowledgments--contact)
 
-*   **Framework:** React.js 18.x with React Router
-    
-*   **Styling:** Tailwind CSS for modern, responsive design
-    
-*   **State Management:** React Context API / Redux
-    
-*   **Maps:** Google Maps JavaScript API
-    
-*   **HTTP Client:** Axios
-    
+---
 
-### Backend
+## About
 
-*   **Runtime:** Node.js (v16+)
-    
-*   **Framework:** Express.js with RESTful APIs
-    
-*   **Authentication:** JWT with bcrypt + OAuth 2.0 (Google, Facebook)
-    
-*   **File Upload:** Multer for image handling
-    
+**Ray7 Masr (رايح مصر)** — *"Going to Egypt"* — is an AI-assisted trip planner focusing on Egyptian attractions, culture, cuisine, and logistics. The app combines:
 
-### Database & Storage
+- A recommendation engine (Gemini API + RAG)
+- A contextual chatbot for travel questions
+- Interactive maps and itineraries
+- Community reviews and content moderation
 
-*   **Relational Database:** PostgreSQL 14+ for structured data
-    
-*   **Vector Database:** Pinecone for RAG implementation
-    
-*   **ORM:** Sequelize or Prisma
-    
-*   **Caching:** Redis (optional, for performance)
-    
+---
 
-### AI & Machine Learning
+## Features
 
-*   **LLM:** Gemini API for intelligent responses
-    
-*   **RAG:** Retrieval-Augmented Generation with Pinecone
-    
-*   **Embeddings:** Text embeddings for semantic search
-    
-*   **Datasets:** Custom Egyptian tourism and restaurant databases
-    
+- User authentication, profiles, and preferences (email/password + OAuth)
+- Destination browsing with photos, maps and reviews
+- AI-powered personalized itinerary generation (Gemini API + RAG)
+- Context-aware chatbot backed by a vector database (Pinecone)
+- Cultural & historical content (timelines, articles, language tips)
+- Community features: reviews, forums and sharing
+- Responsive UI and PWA-ready frontend
+- Moderation: automated content checks, sentiment analysis
 
-### DevOps
+---
 
-*   **Version Control:** Git & GitHub
-    
-*   **CI/CD:** GitHub Actions
-    
-*   **Hosting:** AWS, Google Cloud, or Vercel
-    
-*   **Containerization:** Docker (optional)
-    
+## Tech Stack
 
-⚡ Getting Started
------------------
+Frontend
+- React 18.x, React Router
+- Tailwind CSS
+- React Context / Redux
+- Google Maps JavaScript API
+- Axios
+
+Backend
+- Node.js (v16+), Express
+- JWT + bcrypt for auth, plus OAuth (Google / Facebook)
+- Multer for file uploads
+- PostgreSQL (v14+) — relational data
+- Pinecone — vector store for embeddings + RAG
+- ORM: Sequelize or Prisma
+- Redis (optional, caching)
+
+AI / ML
+- Gemini API (LLM)
+- RAG using Pinecone and embeddings
+- Custom datasets for Egyptian sites, restaurants, cultural data
+
+DevOps
+- Git & GitHub
+- GitHub Actions (CI/CD)
+- Docker (optional)
+- Hosting: Vercel / AWS / Google Cloud
+
+---
+
+## Getting Started
 
 ### Prerequisites
 
-*   **Node.js** (v16 or higher)
-    
-*   **npm** or **yarn**
-    
-*   **PostgreSQL** (v14 or higher)
-    
-*   **Git**
-    
-*   **Pinecone account**
-    
-*   **Gemini API key**
-    
-*   **Google Maps API key**
-    
-*   **OAuth credentials** (Google, Facebook)
-    
+- Node.js v16+ and npm (or yarn)
+- PostgreSQL v14+
+- Git
+- Pinecone account & API key
+- Gemini API key
+- Google Maps API key
+- OAuth credentials (Google & Facebook) if enabling social login
 
 ### Installation
 
-1.  **Clone the repository**
-    
+1. Clone the repository
 
-bash
+```bash
+git clone https://github.com/Abdelrahmannasser139/AI-Egypt-Trip-Planner.git
+cd AI-Egypt-Trip-Planner
+```
 
-Plain textANTLR4BashCC#CSSCoffeeScriptCMakeDartDjangoDockerEJSErlangGitGoGraphQLGroovyHTMLJavaJavaScriptJSONJSXKotlinLaTeXLessLuaMakefileMarkdownMATLABMarkupObjective-CPerlPHPPowerShell.propertiesProtocol BuffersPythonRRubySass (Sass)Sass (Scss)SchemeSQLShellSwiftSVGTSXTypeScriptWebAssemblyYAMLXML`   git clone https://github.com/yourusername/ray7-masr.git  cd ray7-masr   `
-
-1.  **Install dependencies**
-    
+2. Install dependencies
 
 Frontend:
 
-bash
-
-Plain textANTLR4BashCC#CSSCoffeeScriptCMakeDartDjangoDockerEJSErlangGitGoGraphQLGroovyHTMLJavaJavaScriptJSONJSXKotlinLaTeXLessLuaMakefileMarkdownMATLABMarkupObjective-CPerlPHPPowerShell.propertiesProtocol BuffersPythonRRubySass (Sass)Sass (Scss)SchemeSQLShellSwiftSVGTSXTypeScriptWebAssemblyYAMLXML`   cd client  npm install   `
+```bash
+cd client
+npm install
+# or
+# yarn install
+```
 
 Backend:
 
-bash
+```bash
+cd ../server
+npm install
+# or
+# yarn install
+```
 
-Plain textANTLR4BashCC#CSSCoffeeScriptCMakeDartDjangoDockerEJSErlangGitGoGraphQLGroovyHTMLJavaJavaScriptJSONJSXKotlinLaTeXLessLuaMakefileMarkdownMATLABMarkupObjective-CPerlPHPPowerShell.propertiesProtocol BuffersPythonRRubySass (Sass)Sass (Scss)SchemeSQLShellSwiftSVGTSXTypeScriptWebAssemblyYAMLXML`   cd ../server  npm install   `
+### Environment Configuration
 
-1.  **Configure environment variables**
-    
+Create .env files for server and client. Below are example variables — update values to your credentials.
 
-Create .env file in the server directory:
+server/.env:
 
-env
+```env
+PORT=4000
+DATABASE_URL=postgres://user:password@localhost:5432/ray7masr
+JWT_SECRET=your_jwt_secret
+NODE_ENV=development
 
-Plain textANTLR4BashCC#CSSCoffeeScriptCMakeDartDjangoDockerEJSErlangGitGoGraphQLGroovyHTMLJavaJavaScriptJSONJSXKotlinLaTeXLessLuaMakefileMarkdownMATLABMarkupObjective-CPerlPHPPowerShell.propertiesProtocol BuffersPythonRRubySass (Sass)Sass (Scss)SchemeSQLShellSwiftSVGTSXTypeScriptWebAssemblyYAMLXML`   # Server Configuration  PORT=5000  NODE_ENV=development  # Database  DATABASE_URL=postgresql://username:password@localhost:5432/ray7_masr  # JWT  JWT_SECRET=your_jwt_secret_key_here  JWT_EXPIRE=7d  # Google Gemini API  GEMINI_API_KEY=your_gemini_api_key_here  # Pinecone  PINECONE_API_KEY=your_pinecone_api_key_here  PINECONE_ENVIRONMENT=your_pinecone_environment  PINECONE_INDEX_NAME=ray7-masr-index  # Google Maps  GOOGLE_MAPS_API_KEY=your_google_maps_api_key_here  # OAuth  GOOGLE_CLIENT_ID=your_google_client_id  GOOGLE_CLIENT_SECRET=your_google_client_secret  FACEBOOK_APP_ID=your_facebook_app_id  FACEBOOK_APP_SECRET=your_facebook_app_secret  # Frontend URL  CLIENT_URL=http://localhost:3000   `
+# Pinecone
+PINECONE_API_KEY=your_pinecone_key
+PINECONE_ENV=your_pinecone_env
 
-Create .env file in the client directory:
+# Gemini or other LLM provider
+GEMINI_API_KEY=your_gemini_api_key
 
-env
+# OAuth credentials
+GOOGLE_CLIENT_ID=your_google_id
+GOOGLE_CLIENT_SECRET=your_google_secret
+FACEBOOK_CLIENT_ID=your_fb_id
+FACEBOOK_CLIENT_SECRET=your_fb_secret
+```
 
-Plain textANTLR4BashCC#CSSCoffeeScriptCMakeDartDjangoDockerEJSErlangGitGoGraphQLGroovyHTMLJavaJavaScriptJSONJSXKotlinLaTeXLessLuaMakefileMarkdownMATLABMarkupObjective-CPerlPHPPowerShell.propertiesProtocol BuffersPythonRRubySass (Sass)Sass (Scss)SchemeSQLShellSwiftSVGTSXTypeScriptWebAssemblyYAMLXML`   REACT_APP_API_URL=http://localhost:5000/api  REACT_APP_GOOGLE_MAPS_API_KEY=your_google_maps_api_key_here   `
+client/.env:
 
-1.  **Set up the database**
-    
+```env
+VITE_API_URL=http://localhost:4000/api
+VITE_GOOGLE_MAPS_API_KEY=your_google_maps_key
+```
 
-bash
+> Keep secrets out of source control. Use environment variables or secrets manager in production.
 
-Plain textANTLR4BashCC#CSSCoffeeScriptCMakeDartDjangoDockerEJSErlangGitGoGraphQLGroovyHTMLJavaJavaScriptJSONJSXKotlinLaTeXLessLuaMakefileMarkdownMATLABMarkupObjective-CPerlPHPPowerShell.propertiesProtocol BuffersPythonRRubySass (Sass)Sass (Scss)SchemeSQLShellSwiftSVGTSXTypeScriptWebAssemblyYAMLXML`   cd server  # Create database  npm run db:create  # Run migrations  npm run db:migrate  # Seed initial data (optional)  npm run db:seed   `
+### Database & Vector DB Initialization
 
-1.  **Initialize vector database**
-    
+1. Create PostgreSQL DB and run migrations (example using npm scripts or ORM CLI).
+   Example for Prisma:
 
-bash
+```bash
+# from server directory
+npx prisma migrate dev --name init
+npx prisma db seed
+```
 
-Plain textANTLR4BashCC#CSSCoffeeScriptCMakeDartDjangoDockerEJSErlangGitGoGraphQLGroovyHTMLJavaJavaScriptJSONJSXKotlinLaTeXLessLuaMakefileMarkdownMATLABMarkupObjective-CPerlPHPPowerShell.propertiesProtocol BuffersPythonRRubySass (Sass)Sass (Scss)SchemeSQLShellSwiftSVGTSXTypeScriptWebAssemblyYAMLXML`   cd server  npm run setup:pinecone   `
+2. Initialize Pinecone index and upload embeddings for your datasets. Example (pseudo):
 
-1.  **Start the development servers**
-    
+```bash
+# Example script (replace with real script)
+node scripts/init-pinecone.js --index ray7masr
+node scripts/upload-embeddings.js --source ./data
+```
 
-Terminal 1 - Backend:
+Add scripts in package.json to automate these steps as needed.
 
-bash
+### Run (Development)
 
-Plain textANTLR4BashCC#CSSCoffeeScriptCMakeDartDjangoDockerEJSErlangGitGoGraphQLGroovyHTMLJavaJavaScriptJSONJSXKotlinLaTeXLessLuaMakefileMarkdownMATLABMarkupObjective-CPerlPHPPowerShell.propertiesProtocol BuffersPythonRRubySass (Sass)Sass (Scss)SchemeSQLShellSwiftSVGTSXTypeScriptWebAssemblyYAMLXML`   cd server  npm run dev   `
+Start backend:
 
-Terminal 2 - Frontend:
+```bash
+cd server
+npm run dev
+# or
+# nodemon src/index.js
+```
 
-bash
+Start frontend:
 
-Plain textANTLR4BashCC#CSSCoffeeScriptCMakeDartDjangoDockerEJSErlangGitGoGraphQLGroovyHTMLJavaJavaScriptJSONJSXKotlinLaTeXLessLuaMakefileMarkdownMATLABMarkupObjective-CPerlPHPPowerShell.propertiesProtocol BuffersPythonRRubySass (Sass)Sass (Scss)SchemeSQLShellSwiftSVGTSXTypeScriptWebAssemblyYAMLXML`   cd client  npm start   `
+```bash
+cd client
+npm run dev
+# visit http://localhost:3000 (or as configured)
+```
 
-1.  **Access the application**Open your browser and navigate to http://localhost:3000
-    
+---
 
-📁 Project Structure
---------------------
+## Project Structure
 
-Plain textANTLR4BashCC#CSSCoffeeScriptCMakeDartDjangoDockerEJSErlangGitGoGraphQLGroovyHTMLJavaJavaScriptJSONJSXKotlinLaTeXLessLuaMakefileMarkdownMATLABMarkupObjective-CPerlPHPPowerShell.propertiesProtocol BuffersPythonRRubySass (Sass)Sass (Scss)SchemeSQLShellSwiftSVGTSXTypeScriptWebAssemblyYAMLXML`   ray7-masr/  │  ├── client/                      # Frontend React application  │   ├── public/  │   │   ├── index.html  │   │   └── assets/              # Static images, icons  │   └── src/  │       ├── components/  │       │   ├── auth/            # Login, Register, ProtectedRoute  │       │   ├── chatbot/         # AI chatbot components  │       │   ├── common/          # Button, Card, Modal, Loader  │       │   ├── navigation/      # Header, Footer, Sidebar  │       │   └── destinations/    # Destination cards, filters  │       ├── pages/  │       │   ├── auth/            # LoginPage, RegisterPage  │       │   ├── cultural/        # CulturalInsights, Timeline  │       │   ├── destinations/    # DestinationList, DestinationDetail  │       │   ├── itinerary/       # ItineraryPlanner, MyItineraries  │       │   ├── profile/         # ProfilePage, Settings  │       │   ├── community/       # Forum, Reviews  │       │   └── HomePage.jsx  │       ├── context/  │       │   ├── AuthContext.jsx  │       │   ├── ThemeContext.jsx  │       │   └── ItineraryContext.jsx  │       ├── hooks/  │       │   ├── useAuth.js  │       │   ├── useApi.js  │       │   └── useDebounce.js  │       ├── services/  │       │   ├── api.js           # Axios instance  │       │   ├── authService.js  │       │   ├── destinationService.js  │       │   └── itineraryService.js  │       ├── utils/  │       │   ├── validators.js  │       │   ├── formatters.js  │       │   └── constants.js  │       ├── assets/  │       ├── styles/  │       │   └── globals.css  │       ├── App.jsx  │       └── index.jsx  │  ├── server/                      # Backend Node.js/Express application  │   └── src/  │       ├── controllers/  │       │   ├── authController.js  │       │   ├── destinationController.js  │       │   ├── itineraryController.js  │       │   ├── chatbotController.js  │       │   └── userController.js  │       ├── routes/  │       │   ├── auth.routes.js  │       │   ├── destination.routes.js  │       │   ├── itinerary.routes.js  │       │   ├── chatbot.routes.js  │       │   └── index.js  │       ├── models/  │       │   ├── User.js  │       │   ├── Destination.js  │       │   ├── Itinerary.js  │       │   ├── Review.js  │       │   └── index.js  │       ├── middleware/  │       │   ├── auth.middleware.js  │       │   ├── validation.middleware.js  │       │   ├── error.middleware.js  │       │   └── upload.middleware.js  │       ├── services/  │       │   ├── gemini.service.js  │       │   ├── pinecone.service.js  │       │   ├── rag.service.js  │       │   └── email.service.js  │       ├── utils/  │       │   ├── ApiError.js  │       │   ├── asyncHandler.js  │       │   └── logger.js  │       ├── config/  │       │   ├── database.js  │       │   ├── gemini.js  │       │   ├── pinecone.js  │       │   └── oauth.js  │       ├── db/  │       │   ├── migrations/  │       │   └── seeders/  │       ├── app.js  │       └── server.js  │  ├── egypt-trip-planner/          # Standalone chatbot application  │   ├── public/  │   └── src/  │       ├── data/  │       │   ├── egyptian_sites.json  │       │   └── egyptian_restaurants.json  │       ├── routes/  │       └── services/  │  ├── docs/                        # Documentation  │   ├── API.md  │   ├── DEPLOYMENT.md  │   └── CONTRIBUTING.md  │  ├── .gitignore  ├── LICENSE  ├── package.json  └── README.md   `
+A high-level overview:
 
-🤖 AI & RAG Implementation
---------------------------
+```
+/client         # React app
+/server         # Express API + business logic
+/scripts        # utility scripts (seed, migrations, embeddings)
+/docs           # documentation (API, RAG, deployment)
+/data           # datasets (sites, restaurants, culture)
+/docker         # Docker compose and Dockerfiles (optional)
+```
 
-### Architecture Overview
+---
 
-Ray7 Masr uses a sophisticated Retrieval-Augmented Generation (RAG) system to provide accurate, contextually relevant responses:
+## AI & RAG Implementation
 
-Plain textANTLR4BashCC#CSSCoffeeScriptCMakeDartDjangoDockerEJSErlangGitGoGraphQLGroovyHTMLJavaJavaScriptJSONJSXKotlinLaTeXLessLuaMakefileMarkdownMATLABMarkupObjective-CPerlPHPPowerShell.propertiesProtocol BuffersPythonRRubySass (Sass)Sass (Scss)SchemeSQLShellSwiftSVGTSXTypeScriptWebAssemblyYAMLXML`   User Query → Embedding Generation → Vector Search (Pinecone) → Context Retrieval → Gemini API → Response   `
+Ray7 Masr uses Retrieval-Augmented Generation to ground LLM responses in curated local datasets:
 
-### Key Components
+- Embeddings are generated for destination data, reviews, and cultural content.
+- Pinecone stores and indexes embeddings for fast semantic retrieval.
+- For chatbot or itinerary generation, the app retrieves the most relevant documents (context) and supplies them to the LLM (Gemini) to produce factual, localized responses.
+- Additional modules include:
+  - Embedding generation and indexing
+  - Context selection and prompt templating
+  - Safety & content moderation before returning content to users
 
-**1\. Vector Database (Pinecone)**
+For implementation details see: ./docs/RAG.md
 
-*   Stores embeddings of destinations, cultural information, and user reviews
-    
-*   Enables semantic search for relevant context
-    
-*   Indexed by categories: attractions, restaurants, history, customs
-    
+---
 
-**2\. Gemini API Integration**
+## Testing
 
-*   Generates natural language responses
-    
-*   Creates personalized itineraries
-    
-*   Provides cultural insights and recommendations
-    
-*   Powers the intelligent chatbot
-    
+Run unit and integration tests (example):
 
-**3\. Custom Datasets**
+```bash
+# server
+cd server
+npm test
 
-*   **Egyptian Sites:** 200+ major attractions with detailed metadata
-    
-*   **Restaurants:** 150+ authentic Egyptian dining locations
-    
-*   **Cultural Content:** Historical events, traditions, and customs
-    
-*   **User-Generated:** Reviews, ratings, and travel tips
-    
+# client
+cd ../client
+npm test
+```
 
-### AI Features in Detail
+Add and maintain test coverage for critical modules: authentication, itinerary generation, RAG retrieval, and API contracts.
 
-**Smart Chatbot**
+---
 
-javascript
+## Deployment
 
-Plain textANTLR4BashCC#CSSCoffeeScriptCMakeDartDjangoDockerEJSErlangGitGoGraphQLGroovyHTMLJavaJavaScriptJSONJSXKotlinLaTeXLessLuaMakefileMarkdownMATLABMarkupObjective-CPerlPHPPowerShell.propertiesProtocol BuffersPythonRRubySass (Sass)Sass (Scss)SchemeSQLShellSwiftSVGTSXTypeScriptWebAssemblyYAMLXML`   // Example interaction  User: "What's the best time to visit the Pyramids?"  AI: "The best time to visit the Pyramids of Giza is early morning        (7-9 AM) or late afternoon (3-5 PM) to avoid the intense        midday heat. Winter months (November-February) offer the most        comfortable temperatures. I can help you add this to your        itinerary with optimal timing!"   `
+Production build examples:
 
-**Personalized Itinerary Generation**
+Frontend (Vercel / static hosting):
 
-*   Analyzes user preferences (budget, interests, duration)
-    
-*   Considers geographical proximity and travel time
-    
-*   Balances popular attractions with hidden gems
-    
-*   Incorporates meal breaks and rest periods
-    
-*   Adapts to constraints (accessibility, dietary restrictions)
-    
+```bash
+cd client
+npm run build
+# deploy build/ to Vercel, Netlify, S3 + CloudFront, etc.
+```
 
-**Content Moderation**
+Backend (Docker + Cloud):
 
-*   AI-powered detection of inappropriate content
-    
-*   Sentiment analysis for review authenticity
-    
-*   Spam and bot detection
-    
+- Build Docker image and push to container registry
+- Use managed DB (RDS / Cloud SQL)
+- Store secrets in secrets manager
+- Use a job queue for heavy tasks (embedding generation, long-running RAG indexing)
 
-📚 Documentation
-----------------
+See ./docs/DEPLOYMENT.md for step-by-step instructions and sample GitHub Actions workflows.
 
-*   [**API Documentation**](./docs/API.md) – Complete API reference
-    
-*   [**Deployment Guide**](./docs/DEPLOYMENT.md) – Production deployment instructions
-    
-*   [**Contributing Guide**](./docs/CONTRIBUTING.md) – How to contribute to the project
-    
-*   [**RAG Implementation**](./docs/RAG.md) – Technical details of the RAG system
-    
+---
 
-🧪 Testing
-----------
+## Contributing
 
-bash
+We welcome contributions!
 
-Plain textANTLR4BashCC#CSSCoffeeScriptCMakeDartDjangoDockerEJSErlangGitGoGraphQLGroovyHTMLJavaJavaScriptJSONJSXKotlinLaTeXLessLuaMakefileMarkdownMATLABMarkupObjective-CPerlPHPPowerShell.propertiesProtocol BuffersPythonRRubySass (Sass)Sass (Scss)SchemeSQLShellSwiftSVGTSXTypeScriptWebAssemblyYAMLXML`   # Run backend tests  cd server  npm test  # Run frontend tests  cd client  npm test  # Run e2e tests  npm run test:e2e  # Generate coverage report  npm run test:coverage   `
+1. Fork the repository
+2. Create a feature branch: `git checkout -b feature/YourFeature`
+3. Commit: `git commit -m "Add: short description"`
+4. Push: `git push origin feature/YourFeature`
+5. Open a Pull Request
 
-🚢 Deployment
--------------
+Please read: ./docs/CONTRIBUTING.md for contribution guidelines and code standards.
 
-### Production Build
+---
 
-bash
+## Bug Reports & Feature Requests
 
-Plain textANTLR4BashCC#CSSCoffeeScriptCMakeDartDjangoDockerEJSErlangGitGoGraphQLGroovyHTMLJavaJavaScriptJSONJSXKotlinLaTeXLessLuaMakefileMarkdownMATLABMarkupObjective-CPerlPHPPowerShell.propertiesProtocol BuffersPythonRRubySass (Sass)Sass (Scss)SchemeSQLShellSwiftSVGTSXTypeScriptWebAssemblyYAMLXML`   # Build frontend  cd client  npm run build  # The build folder is ready to be deployed   `
+Found a bug or have an idea? Open an issue:
 
-### Deployment Options
+- Report a bug: https://github.com/Abdelrahmannasser139/AI-Egypt-Trip-Planner/issues/new?template=bug_report.md
+- Request a feature: https://github.com/Abdelrahmannasser139/AI-Egypt-Trip-Planner/issues/new?template=feature_request.md
 
-*   **Vercel:** Frontend deployment with automatic CI/CD
-    
-*   **Heroku:** Full-stack deployment with PostgreSQL add-on
-    
-*   **AWS:** EC2 for backend, S3 for static assets, RDS for PostgreSQL
-    
-*   **Google Cloud:** App Engine or Cloud Run with Cloud SQL
-    
+If the templates don't exist, use a regular issue and label it appropriately.
 
-See [**Deployment Guide**](./docs/DEPLOYMENT.md) for detailed instructions.
+---
 
-🤝 Contributing
----------------
+## License
 
-We welcome contributions from the community! Here's how you can help:
+This project is licensed under the MIT License — see the [LICENSE](LICENSE) file.
 
-1.  Fork the repository
-    
-2.  Create a feature branch (git checkout -b feature/AmazingFeature)
-    
-3.  Commit your changes (git commit -m 'Add some AmazingFeature')
-    
-4.  Push to the branch (git push origin feature/AmazingFeature)
-    
-5.  Open a Pull Request
-    
+---
 
-Please read [**CONTRIBUTING.md**](./docs/CONTRIBUTING.md) for details on our code of conduct and development process.
+## Acknowledgments & Contact
 
-🐛 Bug Reports & Feature Requests
----------------------------------
+- Egyptian Ministry of Tourism for dataset inspiration
+- Google Gemini team for LLM capabilities
+- Pinecone for vector database infrastructure
+- Open-source community for libraries and tools
 
-Found a bug or have a feature idea? Please open an issue on GitHub:
+Contact:
+- Website: https://ray7masr.com
+- Email: support@ray7masr.com
+- Twitter: https://twitter.com/ray7masr
+- Discord: https://discord.gg/ray7masr
 
-*   [**Report a Bug**](https://github.com/yourusername/ray7-masr/issues/new?template=bug_report.md)
-    
-*   [**Request a Feature**](https://github.com/yourusername/ray7-masr/issues/new?template=feature_request.md)
-    
+---
 
-📄 License
-----------
-
-This project is licensed under the **MIT License** - see the [LICENSE](LICENSE) file for details.
-
-👏 Acknowledgments
-------------------
-
-*   Egyptian Ministry of Tourism for destination data
-    
-*   Google Gemini team for AI capabilities
-    
-*   Pinecone for vector database infrastructure
-    
-*   The open-source community for incredible tools and libraries
-    
-
-📞 Contact & Support
---------------------
-
-*   **Website:** [ray7masr.com](https://ray7masr.com)
-    
-*   **Email:** [support@ray7masr.com](mailto:support@ray7masr.com)
-    
-*   **Twitter:** [@Ray7Masr](https://twitter.com/ray7masr)
-    
-*   **Discord:** [Join our community](https://discord.gg/ray7masr)
-    
-
-**Made with ❤️ for Egypt**
-
-⭐ **Star us on GitHub — it motivates us a lot!**
-
-[🏠 Homepage](https://ray7masr.com) • [📖 Documentation](./docs) • [🐛 Report Bug](https://github.com/yourusername/ray7-masr/issues) • [💡 Request Feature](https://github.com/yourusername/ray7-masr/issues)
+Made with ❤️ for Egypt — If you find this project useful, please give it a star!
