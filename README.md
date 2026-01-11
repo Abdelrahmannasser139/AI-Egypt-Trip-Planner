@@ -1,4 +1,4 @@
-# Ray7 Masr — AI-Powered Egypt Trip Planner (رايح مصر)
+# 🇪🇬 Ray7 Masr — AI-Powered Egypt Trip Planner (رايح مصر)
 
 [![Repo Size](https://img.shields.io/github/repo-size/Abdelrahmannasser139/AI-Egypt-Trip-Planner)](https://github.com/Abdelrahmannasser139/AI-Egypt-Trip-Planner)
 [![Issues](https://img.shields.io/github/issues/Abdelrahmannasser139/AI-Egypt-Trip-Planner)](https://github.com/Abdelrahmannasser139/AI-Egypt-Trip-Planner/issues)
