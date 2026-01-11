@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="400px" height="300px" viewBox="0 0 400 300" version="1.1" xmlns="http://www.w3.org/2000/svg">
+    <title>Red Sea Coast</title>
+    <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <rect fill="#1A5276" x="0" y="0" width="400" height="200"></rect>
+        <rect fill="#E2C9A1" x="0" y="200" width="400" height="100"></rect>
+        <path d="M0,200 C66.6666667,180 133.333333,190 200,180 C266.666667,170 333.333333,180 400,200 L400,300 L0,300 L0,200 Z" fill="#D4AF37"></path>
+        <circle fill="#F1C40F" cx="350" cy="50" r="30"></circle>
+        <path d="M300,150 C310,140 320,145 330,150 C340,155 350,150 360,140" stroke="#FFFFFF" stroke-width="2"></path>
+        <path d="M280,120 C290,110 300,115 310,120 C320,125 330,120 340,110" stroke="#FFFFFF" stroke-width="2"></path>
+    </g>
+</svg>

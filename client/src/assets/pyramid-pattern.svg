@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="100px" height="100px" viewBox="0 0 100 100" version="1.1" xmlns="http://www.w3.org/2000/svg">
+    <title>Pyramid Pattern</title>
+    <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" opacity="0.1">
+        <g fill="#D4AF37">
+            <polygon points="0 100 50 0 100 100"></polygon>
+            <polygon points="25 100 50 50 75 100"></polygon>
+            <polygon points="12.5 100 25 75 37.5 100"></polygon>
+            <polygon points="62.5 100 75 75 87.5 100"></polygon>
+        </g>
+    </g>
+</svg>

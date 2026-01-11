@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="400px" height="300px" viewBox="0 0 400 300" version="1.1" xmlns="http://www.w3.org/2000/svg">
+    <title>Pyramids of Giza</title>
+    <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <rect fill="#E2C9A1" x="0" y="0" width="400" height="300"></rect>
+        <polygon fill="#D4AF37" points="100 250 200 100 300 250"></polygon>
+        <polygon fill="#C19A25" points="150 250 225 150 300 250"></polygon>
+        <polygon fill="#B28A15" points="50 250 125 175 200 250"></polygon>
+        <rect fill="#E2C9A1" x="0" y="250" width="400" height="50"></rect>
+        <circle fill="#F1C40F" cx="350" cy="50" r="30"></circle>
+    </g>
+</svg>

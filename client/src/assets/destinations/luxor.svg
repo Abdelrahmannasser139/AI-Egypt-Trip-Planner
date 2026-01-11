@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="400px" height="300px" viewBox="0 0 400 300" version="1.1" xmlns="http://www.w3.org/2000/svg">
+    <title>Luxor Temple</title>
+    <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <rect fill="#1A5276" x="0" y="0" width="400" height="300"></rect>
+        <rect fill="#D4AF37" x="150" y="100" width="100" height="150"></rect>
+        <rect fill="#D4AF37" x="125" y="80" width="150" height="20"></rect>
+        <rect fill="#D4AF37" x="100" y="60" width="200" height="20"></rect>
+        <rect fill="#D4AF37" x="160" y="250" width="20" height="50"></rect>
+        <rect fill="#D4AF37" x="220" y="250" width="20" height="50"></rect>
+        <rect fill="#D4AF37" x="100" y="250" width="20" height="50"></rect>
+        <rect fill="#D4AF37" x="280" y="250" width="20" height="50"></rect>
+        <circle fill="#F1C40F" cx="50" cy="50" r="30"></circle>
+    </g>
+</svg>

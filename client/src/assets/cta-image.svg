@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="800px" height="600px" viewBox="0 0 800 600" version="1.1" xmlns="http://www.w3.org/2000/svg">
+    <title>CTA Image</title>
+    <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <rect fill="#E2C9A1" x="0" y="0" width="800" height="600"></rect>
+        <rect fill="#FFFFFF" x="50" y="50" width="700" height="500" rx="10"></rect>
+        <rect fill="#D4AF37" x="100" y="100" width="600" height="100" rx="5"></rect>
+        <rect fill="#1A5276" x="100" y="250" width="250" height="250" rx="5"></rect>
+        <rect fill="#D4AF37" x="400" y="250" width="300" height="100" rx="5"></rect>
+        <rect fill="#D4AF37" x="400" y="400" width="300" height="100" rx="5"></rect>
+        <circle fill="#1A5276" cx="650" cy="150" r="30"></circle>
+    </g>
+</svg>

@@ -1,0 +1,94 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  body {
+    @apply antialiased;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-bold;
+  }
+}
+
+@layer components {
+  .btn {
+    @apply px-4 py-2 rounded-md font-medium transition-colors focus:outline-none focus:ring-2 focus:ring-offset-2;
+  }
+  
+  .btn-primary {
+    @apply btn bg-pharaoh-gold text-white hover:bg-pharaoh-gold/90 focus:ring-pharaoh-gold;
+  }
+  
+  .btn-secondary {
+    @apply btn bg-nile-blue text-white hover:bg-nile-blue/90 focus:ring-nile-blue;
+  }
+  
+  .btn-outline {
+    @apply btn border border-pharaoh-gold text-pharaoh-gold hover:bg-pharaoh-gold/10 focus:ring-pharaoh-gold;
+  }
+  
+  .card {
+    @apply bg-white rounded-lg shadow-md overflow-hidden;
+  }
+  
+  .form-input {
+    @apply block w-full rounded-md border-gray-300 shadow-sm focus:border-pharaoh-gold focus:ring-pharaoh-gold;
+  }
+  
+  .form-label {
+    @apply block text-sm font-medium text-gray-700 mb-1;
+  }
+  
+  .form-error {
+    @apply mt-1 text-sm text-red-600;
+  }
+}
+
+/* Egyptian-themed scrollbar */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  @apply bg-desert-sand;
+}
+
+::-webkit-scrollbar-thumb {
+  @apply bg-pharaoh-gold rounded-full;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  @apply bg-pharaoh-gold/80;
+}
+
+/* Hide scrollbar utility */
+.scrollbar-hide {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}
+
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;  /* Chrome, Safari and Opera */
+}
+
+/* Animations */
+@keyframes hieroglyph-fade-in {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-hieroglyph {
+  animation: hieroglyph-fade-in 0.5s ease-out;
+}
