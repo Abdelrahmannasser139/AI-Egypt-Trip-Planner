@@ -1,148 +1,131 @@
-# Ray7 Masr
+![GitHub repo size](https://img.shields.io/github/repo-size/Abdelrahmannasser139/AI-Egypt-Trip-Planner)
+![GitHub contributors](https://img.shields.io/github/contributors/Abdelrahmannasser139/AI-Egypt-Trip-Planner)
+![GitHub language count](https://img.shields.io/github/languages/count/Abdelrahmannasser139/AI-Egypt-Trip-Planner)
+![GitHub top language](https://img.shields.io/github/languages/top/Abdelrahmannasser139/AI-Egypt-Trip-Planner)
 
-A comprehensive web application to assist tourists in planning trips to Egypt, featuring destination exploration, personalized itineraries, cultural insights, and community engagement.
+<div align="center">
+  <h1>🌍 Ray7 Masr – AI-Powered Egypt Trip Planner</h1>
+</div>
 
-## Features
+**Ray7 Masr** is a comprehensive web application that helps tourists plan unforgettable trips to Egypt.  
+It combines **AI-driven recommendations**, rich cultural insights, and community features to deliver personalized travel experiences.
 
-- **User Authentication and Profiles**: Email/password and social media login, profile management
-- **Destination Exploration**: Searchable database of Egyptian destinations with descriptions, images, and reviews
-- **Itinerary Planner**: Custom itineraries with intelligent recommendations using Gemini API
-- **Cultural and Historical Insights**: Articles, videos, and timelines on Egypt's history and culture
-- **Community Features**: User reviews, forum discussions, and social sharing
-- **Responsive Design**: Compatible with desktops, tablets, and smartphones
-- **Gemini API and RAG Integration**: AI-powered planning and information retrieval
+<br>
 
-## Tech Stack
+## 🚀 Features
 
-- **Frontend**: React.js with Tailwind CSS
-- **Backend**: Node.js/Express.js with RESTful APIs
-- **Database**: PostgreSQL for structured data, Pinecone for vector database (RAG)
-- **Authentication**: JWT with OAuth for social logins
-- **Maps**: Google Maps API integration
-- **AI**: Gemini API with Retrieval-Augmented Generation (RAG)
+- **User Authentication & Profiles**  
+  Sign up with email/password or social login (Google/Facebook) • Manage preferences & itineraries
 
-## Getting Started
+- **Destination Exploration**  
+  Browse & search Egyptian destinations with photos, descriptions, and real user reviews
+
+- **AI-Powered Itinerary Planner**  
+  Generate custom travel plans based on your interests, budget, duration and travel style  
+  (Powered by **Gemini API + RAG**)
+
+- **Cultural & Historical Insights**  
+  Learn about Egypt's history, traditions, etiquette, and must-know facts
+
+- **Community & Social Features**  
+  Write reviews • Join discussions • Share travel photos & stories
+
+- **Fully Responsive Design**  
+  Beautiful experience on mobile, tablet, and desktop
+
+- **Smart AI Integration**  
+  Gemini API + Retrieval-Augmented Generation (RAG) for contextual & accurate recommendations
+
+<br>
+
+## 🛠 Tech Stack
+
+| Layer          | Technologies                                      |
+|----------------|---------------------------------------------------|
+| **Frontend**   | React.js • Tailwind CSS                           |
+| **Backend**    | Node.js • Express.js • RESTful APIs               |
+| **Database**   | PostgreSQL (main) • Pinecone (vector DB for RAG)  |
+| **Auth**       | JWT + OAuth 2.0 (Google, Facebook)                |
+| **Maps**       | Google Maps API                                   |
+| **AI**         | Google Gemini API + Retrieval-Augmented Generation|
+| **Others**     | Vite, React Router, Axios, Drizzle (ORM), etc.    |
+
+<br>
+
+## ⚡ Quick Start
 
 ### Prerequisites
-
-- Node.js (v16 or higher)
-- npm or yarn
+- Node.js v16+
 - PostgreSQL
 - Pinecone account
 - Gemini API key
 - Google Maps API key
-- OAuth credentials (Google, Facebook)
+- Google & Facebook OAuth credentials
 
 ### Installation
 
-1. Clone the repository:
-   ```
-   git clone https://github.com/yourusername/pharaohs-compass.git
-   cd pharaohs-compass
-   ```
+```bash
+# 1. Clone the repository
+git clone https://github.com/Abdelrahmannasser139/AI-Egypt-Trip-Planner.git
+cd AI-Egypt-Trip-Planner
 
-2. Install dependencies:
-   ```
-   # Install frontend dependencies
-   cd client
-   npm install
+# 2. Install frontend dependencies
+cd client
+npm install
 
-   # Install backend dependencies
-   cd ../server
-   npm install
-   ```
+# 3. Install backend dependencies
+cd ../server
+npm install
 
-3. Set up environment variables:
-   - Create `.env` files in both client and server directories
-   - Add necessary API keys and configuration
+# 4. Create .env files in both client & server folders
+#    Copy values from .env.example and add your keys
 
-4. Set up the database:
-   ```
-   # Run PostgreSQL migrations
-   cd server
-   npm run migrate
-   ```
+# 5. Run database migrations (from server folder)
+npm run migrate
 
-5. Start the development servers:
-   ```
-   # Start backend server
-   cd server
-   npm run dev
+# 6. Start development servers
 
-   # Start frontend server
-   cd client
-   npm run dev
-   ```
+# Backend (in server folder)
+npm run dev
 
-## Project Structure
+# Frontend (in another terminal, from client folder)
+npm run dev
+
+
+🤖 AI Implementation Highlights
+
+Egyptian attractions, restaurants & cultural content stored in Pinecone vector database
+Semantic search + keyword fallback
+Context-aware responses using Gemini API
+Generates complete personalized itineraries
+Smart travel chatbot
+Automated content moderation for community posts
+
+
+
+📂 Project Structure
+textAI-Egypt-Trip-Planner/
+├── client/                 # React + Vite + Tailwind frontend
+├── server/                 # Node.js + Express backend
+├── egypt-trip-planner/     # Standalone AI chatbot version (optional)
+└── README.md
+
+
+🚀 Deployment
+Ready to deploy on:
+
+Vercel (frontend)
+Render / Railway / Fly.io (backend)
+AWS / Google Cloud / DigitalOcean
+
+Detailed guide → docs/deployment.md
+
+
+📄 License
+MIT License – see the LICENSE file for details.
+
+
+  Happy travels in the land of the Pharaohs! 🇪🇬✨
+  Don't forget to ⭐ the repo if you find it useful!
 
 ```
-ray7-masr/
-├── client/                 # Frontend React application
-│   ├── public/             # Static files
-│   └── src/                # Source code
-│       ├── components/     # Reusable UI components
-│       │   ├── auth/       # Authentication components
-│       │   ├── chatbot/    # AI chatbot components
-│       │   ├── common/     # Common UI components
-│       │   └── navigation/ # Navigation components
-│       ├── pages/          # Page components
-│       │   ├── auth/       # Authentication pages
-│       │   ├── cultural/   # Cultural insights pages
-│       │   ├── destinations/# Destination pages
-│       │   ├── itinerary/  # Itinerary planning pages
-│       │   └── profile/    # User profile pages
-│       ├── context/        # React context providers
-│       ├── hooks/          # Custom React hooks
-│       ├── services/       # API service functions
-│       ├── utils/          # Utility functions
-│       ├── assets/         # Static assets
-│       └── styles/         # Global styles
-├── server/                 # Backend Node.js/Express application
-│   └── src/                # Source code
-│       ├── controllers/    # Request handlers
-│       ├── routes/         # API routes
-│       ├── models/         # Database models
-│       ├── middleware/     # Express middleware
-│       ├── services/       # Business logic
-│       ├── utils/          # Utility functions
-│       ├── config/         # Configuration files
-│       └── db/             # Database setup and migrations
-├── egypt-trip-planner/     # Standalone chatbot application
-│   ├── public/             # Static files
-│   └── src/                # Source code
-│       ├── data/           # Egyptian sites and restaurants datasets
-│       ├── routes/         # API routes
-│       └── services/       # AI services
-└── README.md               # Project documentation
-```
-
-## Gemini API and RAG Implementation
-
-The application uses the Gemini API with Retrieval-Augmented Generation (RAG) to provide intelligent recommendations and answer user queries. The implementation involves:
-
-1. Storing destination data, cultural information, and user reviews in a vector database (Pinecone)
-2. Converting user queries into vector embeddings
-3. Retrieving relevant information from the vector database
-4. Using the Gemini API to generate accurate and contextually relevant responses
-
-### Key AI Features
-
-- **Smart Chatbot**: Get instant answers to your travel questions with our Gemini-powered chatbot
-- **Personalized Itinerary Generation**: AI creates custom travel plans based on your preferences, interests, and budget
-- **Cultural Insights**: AI-generated explanations of Egyptian history, customs, and traditions
-- **Content Moderation**: AI-powered moderation of user-generated content in the community forum
-
-### Datasets
-
-- **Egyptian Sites Dataset**: Contains detailed information about major tourist attractions in Egypt, including visiting hours, entrance fees, historical significance, and visitor tips
-- **Egyptian Restaurants Dataset**: Provides information about authentic Egyptian restaurants, their locations, cuisine types, signature dishes, and price ranges
-- **Keyword-Based Retrieval**: The system analyzes user queries for relevant keywords and retrieves the most pertinent information from the datasets
-
-## Deployment
-
-The application can be deployed on cloud platforms such as AWS, Google Cloud, or Vercel. Detailed deployment instructions are available in the [Deployment Guide](./docs/deployment.md).
-
-## License
-
-This project is licensed under the MIT License - see the LICENSE file for details.
