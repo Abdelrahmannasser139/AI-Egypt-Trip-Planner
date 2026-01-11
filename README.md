@@ -12,6 +12,7 @@ A modern web application that helps travelers plan unforgettable trips to Egypt 
 
 - [About](#about)
 - [Features](#features)
+- [Screenshots](#screenshots)
 - [Tech Stack](#tech-stack)
 - [Getting Started](#getting-started)
   - [Prerequisites](#prerequisites)
@@ -25,8 +26,7 @@ A modern web application that helps travelers plan unforgettable trips to Egypt 
 - [Deployment](#deployment)
 - [Contributing](#contributing)
 - [Bug Reports & Feature Requests](#bug-reports--feature-requests)
-- [License](#license)
-- [Acknowledgments & Contact](#acknowledgments--contact)
+- [Contact](#acknowledgments--contact)
 
 ---
 
@@ -53,6 +53,17 @@ A modern web application that helps travelers plan unforgettable trips to Egypt 
 - Moderation: automated content checks, sentiment analysis
 
 ---
+
+## 🖼️ Screenshots
+
+### Home Page
+![Home Page](assets/home.png)
+
+### AI Chatbot
+![AI Chatbot](assets/chatbot.png)
+
+---
+
 
 ## Tech Stack
 
