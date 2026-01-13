@@ -312,7 +312,6 @@ If the templates don't exist, use a regular issue and label it appropriately.
 ---
 
 ## Contact:  
-- **GitHub:** [https://github.com/Abdelrahmannasser139](https://github.com/Abdelrahmannasser139)  
 - **Email:** [Abdelrahmanasser139@gmail.com](mailto:Abdelrahmanasser139@gmail.com)  
 - **Portfolio:** [https://abdelrahmannasser139.github.io/portfolio/](https://abdelrahmannasser139.github.io/portfolio/)  
 - **LinkedIn:** [https://www.linkedin.com/in/abdelrahman-nasser139](https://www.linkedin.com/in/abdelrahman-nasser139)
